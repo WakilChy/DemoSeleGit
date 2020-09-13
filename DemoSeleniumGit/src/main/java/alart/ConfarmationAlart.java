@@ -1,4 +1,4 @@
-package Practice;
+package alart;
 
 import java.util.concurrent.TimeUnit;
 
@@ -40,9 +40,10 @@ public class ConfarmationAlart {
 		//switching to alert and capturing alert message
 				
 		Alert confirmationAlert = driver.switchTo().alert();
-		System.out.println(confirmationAlert.getText());
+		//System.out.println(confirmationAlert.getText());
 		Thread.sleep(3000);
 		confirmationAlert.dismiss();
+		//confirmationAlert.accept();
 
 	}
 

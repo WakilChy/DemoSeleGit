@@ -1,4 +1,4 @@
-package Practice;
+package iFrame;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -21,6 +21,8 @@ public class iFrame {
 		
 		driver.findElementByXPath("//input[@value=\"John\"]").clear();
 		driver.findElementByXPath("//input[@value=\"John\"]").sendKeys("Tasnim");
+		
+		
 		
 		
 		

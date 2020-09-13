@@ -1,4 +1,4 @@
-package Practice;
+package alart;
 
 import java.util.concurrent.TimeUnit;
 
@@ -18,28 +18,34 @@ System.setProperty("webdriver.chrome.driver", "C:\\ChromeDriver 85.0.4183.87\\ch
 		driver.manage().window().maximize();
 		
 		
+		
 		//Switch to Frame
 		driver.switchTo().frame("iframeResult");
-		//Click
+		
+		//Click 
 		driver.findElement(By.xpath("//button[text()='Try it']")).click();
 		
 		
 		//switch to alert
-		Alert alert = driver.switchTo().alert();
+		Alert promptalert = driver.switchTo().alert();
 		//alert.getText();
 		Thread.sleep(2000);
 		
 		
-		alert.sendKeys("Bangladesh");		
-		//alert.accept();
-		driver.switchTo().alert().accept();
+		promptalert.sendKeys("Bangladesh");		
+		promptalert.accept();
+		
+		
+		//driver.switchTo().alert().accept();
 		
 		
 		
 		//print the message
 		//System.out.println(driver.findElement(By.id("demo")).getText());
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		//driver.close();
+		driver.close();
+
+		
 		
 
 	}
