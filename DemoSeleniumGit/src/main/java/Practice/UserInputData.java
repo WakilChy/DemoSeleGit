@@ -6,7 +6,7 @@ public class UserInputData {
 
 	public static void main(String[] args) {
 		
-		Scanner myname = new Scanner(System.in);  // Create a Scanner object
+		Scanner myname = new Scanner(System.in);//Create a Scanner object
 	    
 		
 		System.out.println("Enter username : ");
@@ -19,8 +19,7 @@ public class UserInputData {
 	    System.out.println(fname+" "+lname);
 	    
 	    
-	    
-	    //Scanner sum = new Scanner(System.in);  // Create a Scanner object
+	    //Scanner sum = new Scanner(System.in);// Create a Scanner object
 	    
 		
 		System.out.println("Enter FirstNum : ");
